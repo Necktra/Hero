@@ -1,19 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch, useSelector } from 'react-redux';
-// Задача для этого компонента:
-// Реализовать создание нового героя с введенными данными. Он должен попадать
-// в общее состояние и отображаться в списке + фильтроваться
-// Уникальный идентификатор персонажа можно сгенерировать через uiid
-// Усложненная задача:
-// Персонаж создается и в файле json при помощи метода POST
-// Дополнительно:
-// Элементы <option></option> желательно сформировать на базе
-// данных из фильтров
 
 import { useState } from "react";
-import { heroCreated, filtersFetching, filtersFetchingError } from '../../actions';
+import { heroCreated } from '../../actions';
 import { useHttp } from './../../hooks/http.hook';
-import { filtersFetched } from './../../actions/index';
 
 const HeroesAddForm = () => {
 
@@ -21,7 +11,7 @@ const HeroesAddForm = () => {
     const [heroDescr, setHeroDescr] = useState('');
     const [heroElement, setHeroElement] = useState('');
 
-    const {filters, filtersLoadingStatus} = useSelector(state => state);
+    const {filters, filtersLoadingStatus} = useSelector(state => state.filters);
 
     const {request} = useHttp();
     const dispatch = useDispatch();
@@ -69,7 +59,7 @@ const HeroesAddForm = () => {
                 <label htmlFor="name" className="form-label fs-4">Имя нового героя</label>
                 <input 
 
-                    onInput={(e)=>setHeroName(e.target.value)}
+                    onChange={(e)=>setHeroName(e.target.value)}
                     value={heroName}
 
                     required
@@ -84,7 +74,7 @@ const HeroesAddForm = () => {
                 <label htmlFor="text" className="form-label fs-4">Описание</label>
                 <textarea
 
-                    onInput={(e)=>setHeroDescr(e.target.value)}
+                    onChange={(e)=>setHeroDescr(e.target.value)}
                     value={heroDescr}
 
                     required
@@ -99,7 +89,7 @@ const HeroesAddForm = () => {
                 <label htmlFor="element" className="form-label">Выбрать элемент героя</label>
                 <select 
 
-                    onInput={(e)=>setHeroElement(e.target.value)}
+                    onChange={(e)=>setHeroElement(e.target.value)}
                     value={heroElement}
 
                     required
