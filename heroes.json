@@ -13,12 +13,6 @@
       "element": "wind"
     },
     {
-      "id": "c3e4f263-4cc5-4424-94aa-168c0adfe961",
-      "name": "dbsvgs3r",
-      "description": "bfd",
-      "element": "wind"
-    },
-    {
       "id": "4e4f5767-3342-4093-8775-90c4cc4b672d",
       "name": "dbsvgs3",
       "description": "bttt",
@@ -35,6 +29,12 @@
       "name": "hhhh",
       "description": "hhhh",
       "element": "water"
+    },
+    {
+      "id": "3182d020-5c89-458b-8eb7-c4beaed5f212",
+      "name": "оне",
+      "description": "hhh",
+      "element": "fire"
     }
   ],
   "filters": [
