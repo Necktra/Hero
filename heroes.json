@@ -7,12 +7,6 @@
       "element": "fire"
     },
     {
-      "id": 2,
-      "name": "Неизвестный герой",
-      "description": "Скрывающийся в тени",
-      "element": "wind"
-    },
-    {
       "id": "4e4f5767-3342-4093-8775-90c4cc4b672d",
       "name": "dbsvgs3",
       "description": "bttt",
@@ -23,12 +17,6 @@
       "name": "vsb",
       "description": "м",
       "element": "earth"
-    },
-    {
-      "id": "3b2238bb-9d96-4dd4-ab7c-f8794451f213",
-      "name": "hhhh",
-      "description": "hhhh",
-      "element": "water"
     },
     {
       "id": "3182d020-5c89-458b-8eb7-c4beaed5f212",
