@@ -13,16 +13,10 @@
       "element": "water"
     },
     {
-      "id": "b26aabc6-4a23-4969-8d5d-8a02e27bf9eb",
-      "name": "vsb",
-      "description": "м",
+      "id": "33f7a703-3938-4ccc-8445-ceb408797851",
+      "name": "fwv",
+      "description": "cccc",
       "element": "earth"
-    },
-    {
-      "id": "8f964c81-a8d5-41ac-b7a5-83240361b079",
-      "name": "htr",
-      "description": "thrh",
-      "element": "fire"
     }
   ],
   "filters": [
