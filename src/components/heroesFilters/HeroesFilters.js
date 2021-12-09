@@ -14,7 +14,6 @@ const HeroesFilters = () => {
 
     useEffect(() => {
         dispatch(fetchFilters());
-
         // eslint-disable-next-line
     }, []);
 
